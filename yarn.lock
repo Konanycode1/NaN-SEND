@@ -431,6 +431,14 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
+browser-router@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/browser-router/-/browser-router-0.2.0.tgz#d9c8b265d14df48887c4b5c0bf9294b35b7915af"
+  integrity sha512-lBmEZSXzhwO7q12kv0o4/WO6bVayqeHd2ZP0cCszeD9xTEC2fAM+U5BBKG+4yqJHqW//ua+olgPhEWETVjynGQ==
+  dependencies:
+    query-string "~0.1.1"
+    underscore "~1.5.2"
+
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.2.tgz#b1d4e89e688119c3c9a903ad30abb2f6a919be3c"
@@ -1429,6 +1437,11 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
+query-string@~0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-0.1.1.tgz#29b0b212dc8df7782143437e11f88650b07f8d07"
+  integrity sha512-SQ/K9KUsAl2bnieZV2mddfJkw/ea1W6K7zL9dNrpFrE8pkVNXf+AjgvJ4DOjRZ2IrINkPsqwV6x+k0gaVhMFfQ==
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
@@ -1441,6 +1454,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-icons@^4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.11.0.tgz#4b0e31c9bfc919608095cc429c4f1846f4d66c65"
+  integrity sha512-V+4khzYcE5EBk/BvcuYRq6V/osf11ODUM2J8hg2FDSswRrGvqiYUYPRy4OdrWaQOBj4NcpJfmHZLNaD+VH0TyA==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -1727,6 +1745,11 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
+
+underscore@~1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.5.2.tgz#1335c5e4f5e6d33bbb4b006ba8c86a00f556de08"
+  integrity sha512-yejOFsRnTJs0N9CK5Apzf6maDO2djxGoLLrlZlvGs2o9ZQuhIhDL18rtFyy4FBIbOkzA6+4hDgXbgz5EvDQCXQ==
 
 uri-js@^4.2.2:
   version "4.4.1"

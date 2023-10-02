@@ -1,0 +1,45 @@
+:root {
+  --ma-couleur-principale: #262935;
+  --ma-couleur-bouton: #6870e0;
+  --mon--autre--couleur: #b6b9e5;
+  --ma--couleur--text: #ffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.Link {
+  text-decoration: none;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 90px;
+  transition: 0.1s;
+  background-color: var(--ma--couleur--text);
+  box-shadow: var(--ma-couleur-bouton) 2px 2px 2px 2px;
+}
+.navbar {
+  display: flex;
+  column-gap: 5rem;
+  font-size: 0.5rem +1.5vw;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ma-couleur-principale);
+}
