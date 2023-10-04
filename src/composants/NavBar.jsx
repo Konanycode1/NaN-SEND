@@ -30,7 +30,7 @@ function NavBar() {
             <span className="reactIcon-logo">
               <BiSolidMessageRoundedDots />
             </span>
-            <span className="span1">NAN-</span>
+            <span className="span1">NaN-</span>
             <span className="span2">SEND</span>
           </a>
           <ul className="navbar" ref={nav}>
