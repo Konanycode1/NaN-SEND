@@ -62,3 +62,39 @@
     padding: 1rem;
     width: 100%;
 }
+.cardMessage .card{
+    border: none;
+}
+.telephoneMilieu button{
+    float: right;
+    position: relative;
+    top: 7rem;
+}
+
+
+@media (max-width:896px) {
+    .cardMessage .mt-5 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:740px) {
+    .telephoneMilieu button{
+        top: 5rem;
+    }
+}
+@media (max-width: 1180px) {
+    .cardMessage .mt-5 {
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .telephoneMilieu button{
+        top: 2rem;
+    }
+
+}
+@media (max-width: 1024px) {
+    .telephoneMilieu button{
+        top: 0;
+    }
+}

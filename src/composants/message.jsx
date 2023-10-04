@@ -27,11 +27,19 @@ export default function Message() {
                                     <input type="text" placeholder="Promo Nan 6.23"/>
                                     <label htmlFor="">Public ciblé</label>
                                     <select name="" id="">
-                                        <option value="">sélectionner un public</option>
-                                        <option value="">Teams Privés <i class="fa-solid fa-message"></i><i class="fa-solid fa-envelope"></i><i class="fa-brands fa-whatsapp"></i></option>
+                                        <option value="">Sélectionner un public</option>
+                                        <option value="">Teams Privés </option>
                                         <option value="">Javascript teams</option>
                                         <option value="">Python teams</option>
                                     </select>
+
+                                    <select name="" id="">
+                                        <option value="">Moyen de transfert</option>
+                                        <option value="">Whatsapp </option>
+                                        <option value="">Telegramme</option>
+                                        <option value="">Message</option>
+                                    </select>
+                                    <button type="button" class="btn btn-secondary">Envoyer la diffusion</button>
                                 </div>
                             </div>
                         </div>
