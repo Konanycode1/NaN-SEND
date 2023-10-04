@@ -1,31 +1,87 @@
 import "./../assets/css/footer.css";
+import imgLogo from "./../assets/images/log.png";
 
 function Footer() {
   return (
     <>
-      <div className="container-fluid my-10">
-        <footer className="text-center text text-white">
-          <div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-              laborum qui autem quaerat totam neque a id quisquam rem vel iusto,
-              nemo possimus, maiores odit molestiae maxime explicabo itaque
-              fugit.
-            </p>
+      <div className="container-fluid">
+        <footer className="text-center text text-white fixed-top">
+          <div className="container-fluid footer">
+            <div className="section1">
+              <h1>Prêt à commencer?</h1>
+              <p>
+                Libérez la puissance de NaN_Send pour faciliter <br /> vos
+                conversation avec vos clients.
+              </p>
+            </div>
+            <div className="BoxCard">
+              <div className="card">
+                <p style={{ marginRight: "10px" }}>
+                  <i
+                    className="fa-solid fa-check"
+                    style={{ marginRight: "40px" }}
+                  ></i>
+                  14 Jours d’essaies
+                </p>
+                <p>
+                  <i className="fa-solid fa-check"></i>
+                  Pas de carte de crédit
+                </p>
+                <p>
+                  <i
+                    className="fa-solid fa-check"
+                    style={{ marginLeft: "25px" }}
+                  ></i>
+                  Annuler à tout moment
+                </p>
+                <button className="butonCard">Abonnement</button>
+              </div>
+              <hr className="w-100 clearfix d-md-none" />
+              <div className="card">
+                <p>
+                  <i className="fa-solid fa-check"></i>
+                  Chattez plus facilement
+                </p>
+                <p>
+                  <i
+                    className="fa-solid fa-check"
+                    style={{ marginLeft: "25px" }}
+                  ></i>
+                  Avantages de NaN_Send
+                </p>
+                <p>
+                  <i className="fa-solid fa-check"></i>
+                  Annuler à tout moment
+                </p>
+                <button className="butonCard">Réservation</button>
+              </div>
+            </div>
           </div>
-          <hr className="container my-5" />
+          <hr
+            className="container my-3"
+            style={{ border: "1.5px solid #c7caf6" }}
+          />
           <div className="container-fluid p-10 pb-0">
             <section>
               <div className="row">
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h6>
-                    NAN_<span>SEND</span>
-                  </h6>
-                  <img src="" alt="" />
+                  <h3>
+                    NaN_
+                    <span
+                      style={{
+                        color: "#6870e0",
+                        fontWeight: "bold",
+                        fontSize: "1.5rem",
+                      }}
+                    >
+                      SEND
+                    </span>
+                  </h3>
+                  <img src={imgLogo} alt="" style={{ width: "30%" }} />
                 </div>
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6>Apropos</h6>
+                  <h5>Apropos</h5>
                   <p>
                     <a style={{ color: "white" }}>Blog</a>
                   </p>
@@ -44,7 +100,7 @@ function Footer() {
                 </div>
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6>Support</h6>
+                  <h5>Support</h5>
                   <p>
                     <a style={{ color: "white" }}>Accueil</a>
                   </p>
@@ -59,8 +115,8 @@ function Footer() {
                   </p>
                 </div>
                 <hr className="w-100 clearfix d-md-none" />
-                <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6>WhatsApp Guides</h6>
+                <div className="col-md-3 col-lg-2 col-xl-2  mt-3">
+                  <h5>WhatsApp Guides</h5>
                   <p>
                     <a style={{ color: "white" }}>Entreprise WhatsApp</a>
                   </p>
@@ -84,62 +140,56 @@ function Footer() {
                 </div>
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h6>Bulletin</h6>
-                  <p>
-                    <i className="fas fa-home mr-3"></i> New York, NY 10012, US
-                  </p>
-                  <p>
-                    <i className="fas fa-envelope mr-3"></i> info@gmail.com
-                  </p>
-                  <p>
-                    <i className="fas fa-phone mr-3"></i> + 01 234 567 88
-                  </p>
-                  <p>
-                    <i className="fas fa-print mr-3"></i> + 01 234 567 89
-                  </p>
+                  <h5>Bulletin</h5>
+                  <input type="email" placeholder="email" />
+                  <button
+                    style={{
+                      padding: "10px",
+                      background: "#6870e0",
+                      border: "none",
+                      color: "#fff",
+                      borderRadius: "5PX",
+                    }}
+                  >
+                    Envoyer
+                  </button>
                 </div>
               </div>
             </section>
 
-            <hr className="container my-3" />
+            <hr
+              className="container my-3"
+              style={{ border: "1.5px solid #c7caf6" }}
+            />
 
-            <section className="p-3 pt-0">
+            <section className="p-3 pt-0 bas">
               <div className="row d-flex align-items-center">
                 <div className="col-md-7 col-lg-8 text-center text-md-start">
                   <div className="p-3">
-                    © 2023 NaN_Send
-                    <a style={{ color: "white" }} href=""></a>
+                    {" "}
+                    NaN_
+                    <span style={{ color: "#6870e0" }}>SEND</span>
                   </div>
                 </div>
                 <div className="col-md- col-lg-4 ml-lg-0 text-center text-md-end">
-                  <a
-                    className="btn btn-outline-light btn-floating m-1"
-                    style={{ color: "white" }}
-                    role="button"
-                  >
-                    <i className="fab fa-facebook-f"></i>
+                  <a className="" role="button">
+                    <i className="fa-brands fa-telegram"></i>
                   </a>
 
-                  <a
-                    className="btn btn-outline-light btn-floating m-1"
-                    style={{ color: "white" }}
-                    role="button"
-                  >
+                  <a className="" role="button">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                  <a className="" role="button">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a className="" role="button">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a
-                    className="btn btn-outline-light btn-floating m-1"
-                    style={{ color: "red" }}
-                    role="button"
-                  >
-                    <i className="fab fa-google"></i>
+                  <a className="" role="button">
+                    <i className="fa-brands fa-youtube"></i>
                   </a>
-                  <a
-                    className="btn btn-outline-light btn-floating m-1"
-                    style={{ color: "white" }}
-                    role="button"
-                  >
-                    <i className="fab fa-instagram"></i>
+                  <a className="" role="button">
+                    <i className="fa-brands fa-whatsapp"></i>
                   </a>
                 </div>
               </div>

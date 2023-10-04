@@ -7,5 +7,150 @@
 footer {
   background-color: #262935;
   width: 100%;
-  height: 70vh;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.footer .section1 {
+  width: 40%;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.section1 h1 {
+  font-size: 3rem;
+}
+
+.section1 p {
+  font-size: 20px;
+}
+
+.footer .BoxCard {
+  width: 60%;
+  display: flex;
+  padding: 30px;
+}
+
+.BoxCard .card {
+  width: 40%;
+  background-color: #ffff;
+  padding-left: -40px;
+  height: 23vh;
+  margin-left: 30px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-style: arial;
+  color: #262935;
+}
+.card p i {
+  margin-right: 40px;
+  color: #6870e0;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.card .butonCard {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 30px;
+  border: 2px solid #6870e0;
+  background: none;
+  color: #262935;
+}
+
+:hover.card .butonCard {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 30px;
+  border: none;
+  background-color: #6870e0;
+  color: #fff;
+}
+
+:hover .bas a {
+  color: #ffff;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+:hover.fa-whatsapp {
+  color: #6870e0;
+}
+:hover.fa-youtube {
+  color: #6870e0;
+}
+:hover.fa-twitter {
+  color: #6870e0;
+}
+:hover.fa-linkedin {
+  color: #6870e0;
+}
+:hover.fa-telegram {
+  color: #6870e0;
+}
+:hover.fa-facebook-f {
+  color: #6870e0;
+}
+
+h5 {
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  color: #6870e0;
+}
+.rait {
+  width: 100%;
+  height: 30px;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid #6870e0;
+  color: #ffff;
+  border-radius: 10px;
+  margin-right: 3px;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.611);
+}
+/*ordinat*/
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .section1 {
+    width: 100%;
+  }
+  .footer .BoxCard {
+    width: 100%;
+  }
+
+  .footer .BoxCard {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .BoxCard .card {
+    width: 55%;
+    margin: auto;
+    height: 13vh;
+  }
 }
