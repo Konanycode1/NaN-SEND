@@ -1,6 +1,6 @@
 import "../assets/css/messages.css"
 import Fil from "./fil"
-
+import { Link } from "react-router-dom"
 
 
 export default function Message() {
@@ -58,6 +58,7 @@ export default function Message() {
                                     de mises à jour d'événements, de diffusions d'urgence, 
                                     d'alertes de temps d'arrêt et bien plus encore.
                                 </p>
+                                <Link to={"/dashboard"}>cliquez ici</Link>
                             </div>
                             
                         </div>
