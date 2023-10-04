@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.titre{
+    text-align: center;
+}
+
+.titre h1{
+    color: white;
+}
+
+.barre{
+    background-color:  #6870E0;
+    color: white;
+}
+
+.colore{
+    height: 70vh;
+    width: 100%;
+    background-color: #262935;
+}
+
+.boton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.etpe{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #6870E0;
+    border-radius: 20px;
+    background-color: #6870E0;
+    color: white;
+    cursor: pointer;
+}
+.etpe1{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #6870E0;
+    border-radius: 20px;
+    background-color: #262935;
+    color: #6870E0;
+    cursor: pointer;
+}
+
+.etpe1:hover{
+    background-color: #6870E0;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    margin-top: 105px;
+    justify-content: space-between;
+
+}
+
+.flex p{
+    color: white;
+}
+
+.bull{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #6870E0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6870E0;
+}
+
+.icon{
+    font-size: 25px;
+    color: white;
+}
+
+.bulle{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #6870E0;
+    border-radius: 50%;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tracer{
+    height: 1px;
+    width: 100px;
+    border: 1px dashed #6870E0;
+}
+
+.ball{
+    display: flex;
+    align-items: center;
+}
+
+/* .chat{
+    margin-left: 65px;
+} */
+
+.chat h4{
+    text-align: center;
+    font-size: 2rem;
+    color: #6870E0;
+}
+
+.texto p{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.trai{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #6870E0;
+    margin-top: 30px;
+}
+
+
+
+
+/* DEUXIEME PARTIE */
+.separe{
+    display: flex;
+    justify-content: space-between;
+}
+.carre{
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.tire{
+text-align: center;
+}
+.loi{
+    display: flex;
+    justify-content: center;
+}
+.par{
+    height: 150px;
+    width: 500px;
+}
+
+/* TROISIEME PARTIE */
+.send{
+    height: 60vh;
+    width: 100%;
+    border: 1px solid red;
+    background-color: #6870e0;
+    margin-top: 10px;
+}
