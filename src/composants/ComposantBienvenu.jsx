@@ -4,6 +4,7 @@ import Register from "../assets/css/Register";
 import { Link } from "react-router-dom";
 import Login from "../assets/css/Login";
 import { GrValidate } from "react-icons/gr";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import imagEcobanck from "../assets/images/ecobank.jpeg";
 import imagOrange from "../assets/images/Orange-Couleur.jpeg";
 import imagMtn from "../assets/images/MTN-Logo.png";
@@ -12,6 +13,12 @@ import imagAtlantic from "../assets/images/atlantic.png";
 import imagCIE from "../assets/images/Logo_CIE.jpeg";
 import imagNaN from "../assets/images/NaN.png";
 import imagUba from "../assets/images/uba.jpeg";
+import msgGroupe from "../assets/images/msgGroupé1.jpg";
+import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
+import canalDiff2 from "../assets/images/canalDiff2.jpg";
+import canalDiff1 from "../assets/images/canalDiff1.jpg";
+import statistique from "../assets/images/statistiq.jpg";
+import msgillimit from "../assets/images/msgillimit.jpg";
 
 function ComposantBienvenu() {
   return (
@@ -78,33 +85,103 @@ function ComposantBienvenu() {
           <br />
           groupés, entre entreprises ou organisations
         </h1>
-        <h3>
+        <h3 className="apropos-title">
           Plus besoin de jongler entre les équipes et les plateformes. Un
           ensemble de chaînes, une plateforme.
         </h3>
         <div className="ligne-cardre">
           <div className="ligne-cardre1">
-            <div className="cardre-photo"></div>
+            <div className="cardre-photo">
+              <img src={msgGroupe2} alt="" />
+            </div>
             <div className="cardre-descrip">
-              <h2>MESSAGE GROUPE</h2>
+              <h3>MESSAGE GROUPE</h3>
               <h4>
-                Avec NAN-SEND vous pouvez envoyer des message à un groupe de
-                personnes sans toute fois avoir a ecrire plusieurs fois le
-                message
+                Avec NAN-SEND vous pouvez envoyer des messages à un groupe de
+                personnes sans avoir a ecrire plusieurs fois le message
               </h4>
             </div>
+            <button class="cta">
+              <span>
+                {" "}
+                <Link className="lien-voirplus">Voir plus</Link>
+              </span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
           </div>
           <div className="ligne-cardre1">
-            <div className="cardre-photo"></div>
-            <div className="cardre-descrip"></div>
+            <div className="cardre-photo">
+              <img src={statistique} alt="" />
+            </div>
+            <div className="cardre-descrip">
+              <h3>STATISTIQUE D’ENVOI</h3>
+              <h4>
+                Avec NAN-SEND vous pouvez voir les statistiques de tout vos
+                messages envoyés comme reçu, quel que soit le canaux de
+                communication.
+              </h4>
+            </div>
+            <button class="cta">
+              <span>
+                {" "}
+                <Link to="/Login" className="lien-voirplus">
+                  Voir plus
+                </Link>
+              </span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
           </div>
           <div className="ligne-cardre1">
-            <div className="cardre-photo"></div>
-            <div className="cardre-descrip"></div>
+            <div className="cardre-photo">
+              <img src={canalDiff1} alt="" />
+            </div>
+            <div className="cardre-descrip">
+              <h3>CANAL DE DIFFUSION</h3>
+              <h4>
+                Avec NAN-SEND vous pouvez choisir le canal de diffusion qui vous
+                est favorables pour faciliter vos échanges et discussion,
+                notamment WhatsApp, Message ou par Email.
+              </h4>
+            </div>
+            <button class="cta">
+              <span>
+                {" "}
+                <Link className="lien-voirplus">Voir plus</Link>
+              </span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
           </div>
           <div className="ligne-cardre1">
-            <div className="cardre-photo"></div>
-            <div className="cardre-descrip"></div>
+            <div className="cardre-photo">
+              <img src={msgillimit} alt="" />
+            </div>
+            <div className="cardre-descrip">
+              <h3>MESSAGE ILLIMITE</h3>
+              <h4>
+                Avec NAN-SEND vous pouvez envoie des messages a un nombre
+                illimité de personnes ou d’entreprise, en toute facilité et
+                sécurité via tous nos canaux de diffusion.
+              </h4>
+            </div>
+            <button class="cta">
+              <span>
+                {" "}
+                <Link className="lien-voirplus">Voir plus</Link>
+              </span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
       </div>

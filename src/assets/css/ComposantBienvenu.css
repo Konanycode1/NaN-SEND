@@ -25,10 +25,9 @@
     height: auto;
   }
   .bienvenu1 {
-    width: 65%;
+    width: 64%;
     margin: auto;
     margin-top: 2rem;
-    border: 1px solid violet;
     height: auto;
     text-align: center;
   }
@@ -204,8 +203,8 @@
   }
   .apropos {
     width: 100%;
-    height: 40rem;
-    background-color: #f3f3f3;
+    height: auto;
+    background-color: var(--mon--autre--couleur);
     margin-top: 5rem;
   }
   .apropos h1 {
@@ -213,7 +212,7 @@
     text-align: center;
     padding-top: 60px;
   }
-  .apropos h3 {
+  .apropos .apropos-title {
     color: var(--ma-couleur-bouton);
     text-align: center;
     margin-top: 35px;
@@ -221,28 +220,118 @@
   .ligne-cardre {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 65%;
     margin: auto;
-    height: 22rem;
-    border: 1px solid salmon;
+    height: 26rem;
     margin-top: 5rem;
     justify-content: space-between;
   }
   .ligne-cardre1 {
     width: 18rem;
     height: auto;
-    border: 1px solid green;
     text-align: center;
     background-color: var(--ma--couleur--text);
+    border-radius: 1rem;
+    box-shadow: var(--ma-couleur-principale) 0px 50px 100px -20px,
+      var(--ma--couleur--text) 0px 30px 60px -30px,
+      var(--ma--couleur--text) 0px -2px 6px 0px inset;
+  }
+  .ligne-cardre1:hover {
+    transform: scale(1.1);
   }
   .ligne-cardre1 .cardre-photo {
     width: 100%;
     height: 11rem;
-    border: 1px solid blue;
+  }
+  .cardre-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   }
   .ligne-cardre1 .cardre-descrip {
+    width: 90%;
+    height: 9.5rem;
+    margin: auto;
+  }
+  .cardre-descrip h3 {
+    color: var(--ma-couleur-bouton);
+    margin-top: 1rem;
+    text-decoration: underline;
+  }
+  .cardre-descrip h4 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  .voirplus {
+    width: 9rem;
+    margin: auto;
+    padding: 8px;
+    height: 2.5rem;
+    background-color: var(--ma-couleur-principale);
+    border: 1px solid var(--ma-couleur-principale);
+    border-radius: 20px;
+  }
+  .voirplus .link {
+    color: var(--ma--couleur--text);
+  }
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--ma-couleur-bouton);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--ma-couleur-principale);
+  }
+
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--ma-couleur-principale);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta .lien-voirplus {
+    color: var(--ma-couleur-principale);
+  }
+
+  .cta:hover:before {
     width: 100%;
-    height: 10rem;
-    border: 1px solid palevioletred;
+    background: var(--ma-couleur-bouton);
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active {
+    transform: scale(0.95);
   }
 }
