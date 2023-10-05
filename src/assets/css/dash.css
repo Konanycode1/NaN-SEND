@@ -1,25 +1,36 @@
 .dash{
     background-color: #272935;
     width: 100%;
-    height: 100vh;
-}
-.cardDash{
-    padding: 2rem;
-}
-.dashEmoji div{
-    width: 100%;
-    background-color: #272935;
-    margin: 10px 0;
     color: #FFF;
-    display: flex;
-    height: 55px;
-    padding-left: 2rem;
-    padding-top: 1rem;
 }
-.dashEmoji a{
-    text-decoration: none;
+#menu a {
+    color: #8E8E93;
 }
-.dashEmoji div i{
+
+#menu a i{
+    font-size: 1.5rem;
     position: relative;
-    top: 5px;
+    top: 3px;
+    margin-top: 1.2rem;
+}
+#menu a span{
+    position: relative;
+    left: 1rem;
+    color: #272935;
+    font-weight: 400;
+}
+#menu a:hover{
+    color: #6870e097;
+    font-weight: 200;
+}
+#menu #ClickHover i{
+    color: #6870E0;
+}
+#menu #ClickHover span{
+    color: #6870E0;
+    font-weight: 500;
+}
+#btnBottom{
+    color: #272935;
+    text-align: center;
 }

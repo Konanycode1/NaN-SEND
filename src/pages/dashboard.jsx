@@ -1,55 +1,87 @@
 import "../assets/css/dash.css"
-import { Link } from "react-router-dom"
+import Rapport from "../composants/rapport"
 import TopBar from "../composants/topBar"
 
 
 export default function Dashboard() {
     return(
-        <div className="dash">
+        <body className="dash">
             <TopBar/>
 
-            <div className="cardDash ">
-                <div class="row">
-                    <div class="col-2 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body dashEmoji mt-5 mb-5  m-0 p-0">
-                                <Link><div className="dashLink"><i class="fa-solid fa-border-all"></i><p>Dashboard</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-solid fa-users"></i><p>Contacts</p></div></Link>    
-                                <Link><div className="dashLink"><i class="fa-solid fa-clipboard-list"></i><p>Messages</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-regular fa-calendar"></i><p>Broadcasts</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-regular fa-circle-user"></i><p>Profils</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-solid fa-hourglass-start"></i><p>Workspace setting</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-solid fa-comments"></i><p>Repports</p></div></Link>
-                                <Link><div className="dashLink"><i class="fa-solid fa-arrow-left"></i><p>Deconnexion</p></div></Link>
-                            </div>
+            <div class="container-fluid mt-4">
+                <div class="row flex-nowrap">
+                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-none min-vh-100">
+                        <div class="d-flex flex-column align-items-center bg-white align-items-sm-start px-3 rounded-4 pt-2 text-white min-vh-60">
+                            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                                <span class="fs-5 d-none d-sm-inline">Menu</span>
+                            </a>
+                            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0" id="ClickHover">
+                                    <i class="fa-solid fa-border-all "></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-solid fa-users"></i> <span class="ms-1 d-none d-sm-inline">Contacts</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-solid fa-clipboard-list"></i> <span class="ms-1 d-none d-sm-inline">Messages</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-regular fa-calendar"></i> <span class="ms-1 d-none d-sm-inline">Broadcasts</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-regular fa-circle-user"></i> <span class="ms-1 d-none d-sm-inline">Profils</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-solid fa-hourglass-start"></i> <span class="ms-1 d-none d-sm-inline">Workspace setting</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-solid fa-comments"></i>  <span class="ms-1 d-none d-sm-inline">Repports</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0">
+                                    <i class="fa-solid fa-arrow-left"></i><span class="ms-1 d-none d-sm-inline">Deconnexion</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <hr />   
                         </div>
+                        <div class="dropdown position-absolute rounded-4 m-2 p-4 bg-white bottom-0 start-0" id="btnBottom">
+                                <h5> NAN DIGITAL ACADEMY</h5>
+                                <h6>Version: 1.0.0.11</h6>
+                            </div>
                     </div>
-                    <div class="col-sm-10">
-                        <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
+
+
+                    <div class="col py-3 cardRassemblement">
+                        <Rapport />
                     </div>
-
                 </div>
+            </div>
 
+        </body>
 
-                    {/* <div class="row">
-                        <div class="col-2 position-absolute bottom-0 start-0">
-                            <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            </div>
-                        </div>
-                    </div> */}
-                </div>
-        </div>
 
     )
 }

@@ -5,7 +5,7 @@ import Fil from './composants/fil'
 import Message from './composants/message'
 import Dashboard from './pages/dashboard'
 import TopBar from './composants/topBar'
-
+import Rapport from './composants/rapport'
 function App() {
 
 
@@ -13,6 +13,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
+        <Route path="/rapport" element={<Rapport/>}/>
         <Route path="/topBar" element={<TopBar/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/fil" element={<Fil/>}/>
