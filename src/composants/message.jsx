@@ -7,7 +7,6 @@ export default function Message() {
     return(
 
         <>
-                <Fil />
             <div className="cardMessage">
                 <div className="row">
                 <div className="col-sm-6 mb-3 mb-sm-0">
@@ -59,10 +58,6 @@ export default function Message() {
                                     d'alertes de temps d'arrêt et bien plus encore.
                                 </p>
                                 <Link to={"/dashboard"}>dashboard</Link><br />
-                                <Link to={"/broadcast"}>Broadcast</Link><br />
-                                <Link to={"/profile"}>profile</Link><br />
-                                <Link to={"/dashboard"}>cliquez ici</Link><br />
-                                <Link to={"/dashboard"}>cliquez ici</Link>
                             </div>
                             
                         </div>

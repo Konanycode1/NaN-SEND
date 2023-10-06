@@ -7,7 +7,9 @@ import Dashboard from './pages/dashboard'
 import TopBar from './composants/topBar'
 import Rapport from './composants/rapport'
 import Broadcast from './composants/ broadcast'
-import Profile from './composants/profile'
+import Accueil from './pages/acceuil'
+import Profiles from './pages/Profile'
+import Rapports from './pages/Rapport'
 function App() {
 
 
@@ -15,13 +17,14 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/profile" element={<Profile/>}/>
+      <Route path="/Rapports" element={<Rapports/>}/>
+      <Route path="/Profile" element={<Profiles/>}/>
         <Route path="/broadcast" element={<Broadcast/>}/>
         <Route path="/rapport" element={<Rapport/>}/>
         <Route path="/topBar" element={<TopBar/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/fil" element={<Fil/>}/>
-        <Route path="/" element={<Message/>}/>
+        <Route path="/" element={<Accueil/>}/>
       </Routes>
     </BrowserRouter>
     </>
