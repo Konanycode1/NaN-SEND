@@ -1,15 +1,15 @@
 import "./../assets/css/connexion.css";
 import google from "./../assets/images/goog.png";
 
-function Connexion() {
+function Inscription() {
   return (
     <>
       <form className="">
         <div className="text">
-          <h3>Formulaire de connexion</h3>
+          <h3>Foumulaire d&apos;Inscription</h3>
           <button className="google">
             <img src={google} alt="" />
-            <p>connecter-vous avec votre compte Coogle </p>
+            <p>S&apos;incrire avec votre compte Coogle </p>
           </button>
           <div className="content__or-text">
             <span></span>
@@ -25,7 +25,7 @@ function Connexion() {
           <input type="text" />
           <br />
           <button type="submit" className="connexion">
-            Connexion
+          S&apos;nscrire
           </button>
         </div>
       </form>
@@ -33,4 +33,4 @@ function Connexion() {
   );
 }
 
-export default Connexion;
+export default Inscription;
