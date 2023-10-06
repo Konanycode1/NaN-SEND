@@ -58,6 +58,10 @@ export default function Message() {
                                     de mises à jour d'événements, de diffusions d'urgence, 
                                     d'alertes de temps d'arrêt et bien plus encore.
                                 </p>
+                                <Link to={"/dashboard"}>dashboard</Link><br />
+                                <Link to={"/broadcast"}>Broadcast</Link><br />
+                                <Link to={"/profile"}>profile</Link><br />
+                                <Link to={"/dashboard"}>cliquez ici</Link><br />
                                 <Link to={"/dashboard"}>cliquez ici</Link>
                             </div>
                             

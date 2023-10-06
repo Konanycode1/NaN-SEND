@@ -1,13 +1,16 @@
+import React from 'react'
+import { Link } from "react-router-dom"
 import "../assets/css/dash.css"
-import Rapport from "../composants/rapport"
 import TopBar from "../composants/topBar"
+import Broadcast from '../composants/ broadcast'
+import Profile from '../composants/profile'
+
 
 
 export default function Dashboard() {
     return(
         <body className="dash">
             <TopBar/>
-
             <div class="container-fluid mt-4">
                 <div class="row flex-nowrap">
                     <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-none min-vh-100">
@@ -59,11 +62,12 @@ export default function Dashboard() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <Link to={"/"}><a href="#" class="nav-link align-middle px-0">
                                     <i class="fa-solid fa-arrow-left"></i><span class="ms-1 d-none d-sm-inline">Deconnexion</span>
                                     </a>
+                                    </Link>
                                 </li>
-
+                                
                             </ul>
                             <hr />   
                         </div>
@@ -75,7 +79,7 @@ export default function Dashboard() {
 
 
                     <div class="col py-3 cardRassemblement">
-                        <Rapport />
+                        <Profile />
                     </div>
                 </div>
             </div>

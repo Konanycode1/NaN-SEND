@@ -1,0 +1,43 @@
+
+.profilCard img{
+    width: 15vw;
+    height: 30vh;
+}
+.cardProfilImg {
+    height: 300px;
+}
+.profilCard .card{
+    border: none;
+    color: #FFF;
+    background-color: #272935;
+}
+.profile_Email hr{
+    border: 1px solid dotted #272935;
+}
+.profile_Email p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.profile_Email .card-body{
+    margin: 0px;
+    padding: 0;
+}
+@media (max-width:1355px) {
+    .cardProfilImg {
+        position: relative;
+        margin: 0;
+        width: 100%;
+    }
+    .cardProfilImg img{
+        width: 100%;
+    }
+    .profile_Email{
+        width: 100%;
+    }
+}
+@media (max-width: 774px) {
+    .cardProfilImg img{
+        height: 70%;
+    }
+}

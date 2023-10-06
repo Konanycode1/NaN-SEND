@@ -34,3 +34,25 @@
     color: #272935;
     text-align: center;
 }
+.dash a{
+    text-decoration: none;
+}
+@media (max-width:768px) {
+    .rapportCard2 td{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #btnBottom {
+        bottom: 0 !important;
+        padding: 5px !important;
+        display: block;
+        position: relative !important;
+        width: 10vw;
+    }
+    #btnBottom h5{
+        font-size: .5rem;
+    }
+    #btnBottom h6{
+        font-size: .5rem;
+    }
+}

@@ -6,6 +6,8 @@ import Message from './composants/message'
 import Dashboard from './pages/dashboard'
 import TopBar from './composants/topBar'
 import Rapport from './composants/rapport'
+import Broadcast from './composants/ broadcast'
+import Profile from './composants/profile'
 function App() {
 
 
@@ -13,6 +15,8 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/broadcast" element={<Broadcast/>}/>
         <Route path="/rapport" element={<Rapport/>}/>
         <Route path="/topBar" element={<TopBar/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
