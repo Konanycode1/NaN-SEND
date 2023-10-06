@@ -5,6 +5,7 @@ import Map from './composants/map.jsx'
 import Footer from './composants/footer.jsx'
 import Connexion from './pages/connexion.jsx'
 import Inscription from './pages/Inscription.jsx'
+import Formulaire from './pages/formInscription'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/Footer" element= {<Footer/>} />
       <Route path="/Connexion" element= {<Connexion/>} />
       <Route path="/Inscription" element= {<Inscription/>} />
+      <Route path="/Formulaire" element= {<Formulaire/>} />
     </Routes>
   </BrowserRouter>
   </>
