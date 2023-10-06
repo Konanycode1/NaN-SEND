@@ -156,9 +156,111 @@ text-align: center;
 
 /* TROISIEME PARTIE */
 .send{
-    height: 60vh;
+    height: 63vh;
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid #6870e0;
     background-color: #6870e0;
     margin-top: 10px;
+}
+.premiText{
+    margin-top: 20%;
+}
+
+.misApart h1{
+    color: white;
+}
+
+.paragraphe p{
+    color: white;
+    align-items: center;
+}
+
+.etoile{
+    display: flex;
+}
+
+.etoile p{
+    color: white;
+}
+.flax{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cool{
+    display: flex;
+    gap: 30px;
+}
+.caro{
+    height: 200px;
+    width: 300px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: white;
+}
+.second{
+    margin-top: 5px;
+    height: 140px;
+    width: 270px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.forImg{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.photo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.ico{
+    font-size: 25px;
+    color: #6870E0;
+}
+
+.bout{
+    height: 45px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.fin{
+    display: flex;
+    gap: 15px;
+}
+.recher{
+    height: 30px;
+    width: 190px;
+    border: 1px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+}
+
+.recher input{
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.ic{
+    color: #6870E0;
 }
