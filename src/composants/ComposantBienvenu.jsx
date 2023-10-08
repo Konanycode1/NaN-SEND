@@ -10,15 +10,14 @@ import imagOrange from "../assets/images/Orange-Couleur.jpeg";
 import imagMtn from "../assets/images/MTN-Logo.png";
 import imagMoov from "../assets/images/moov-africa.jpeg";
 import imagAtlantic from "../assets/images/atlantic.png";
-import imagCIE from "../assets/images/Logo_CIE.jpeg";
-import imagNaN from "../assets/images/NaN.png";
-import imagUba from "../assets/images/uba.jpeg";
-import msgGroupe from "../assets/images/msgGroupé1.jpg";
-import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
-import canalDiff2 from "../assets/images/canalDiff2.jpg";
-import canalDiff1 from "../assets/images/canalDiff1.jpg";
-import statistique from "../assets/images/statistiq.jpg";
+import imagCIE from "../assets/images/Logo_CIE.jpeg"
+import imagNaN from "../assets/images/NaN.png"
+import imagUba from "../assets/images/uba.jpeg"
+import canalDiff1 from "../assets/images/canalDiff1.jpg"
+import statistique from "../assets/images/statistiq.jpg"
 import msgillimit from "../assets/images/msgillimit.jpg";
+import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
+import principaleimg from "../assets/images/message.jpg"
 
 function ComposantBienvenu() {
   return (
@@ -64,7 +63,11 @@ function ComposantBienvenu() {
             <p>Sécurité garantie</p>
           </div>
         </div>
-        <div className="partieSlid"></div>
+        <div className="partieSlid">
+          <div className="moncadreslid">
+            <img src={principaleimg} alt="" />
+          </div>
+        </div>
       </div>
       <div className="titleCentral">
         <h3>CONFIANCE PAR +10 000 ENTREPRISES</h3>
@@ -81,7 +84,7 @@ function ComposantBienvenu() {
       </div>
       <div className="apropos">
         <h1>
-          Une plateforme de messagerie unique pour l’envoie de vous messages{" "}
+          Une plateforme de messagerie unique pour l’envoie de vos messages{" "}
           <br />
           groupés, entre entreprises ou organisations
         </h1>
