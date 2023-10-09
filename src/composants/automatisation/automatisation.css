@@ -28,9 +28,15 @@
 }
 
 .boton{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 75px; */
+
+    display: grid;
+  grid-template-columns: repeat(9, 3fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: end;
 }
 .etpe{
     height: 40px;
@@ -137,11 +143,15 @@
     justify-content: space-between;
 }
 .carre{
-    height: 500px;
-    width: 500px;
-    border: 1px solid red;
+    height: 600px;
+    width: 600px;
+    /* border: 1px solid red; */
 }
-
+.carre img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
 .tire{
 text-align: center;
 }
@@ -194,7 +204,7 @@ text-align: center;
 .caro{
     height: 200px;
     width: 300px;
-    border: 1px solid green;
+    border: 1px solid white;
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
@@ -263,4 +273,53 @@ text-align: center;
 
 .ic{
     color: #6870E0;
+}
+
+
+@media screen and (max-width: 1323px) {
+    .boton{
+        display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  
+    }
+}
+@media screen and (max-width: 1311px) {
+    .boton{
+        display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+    }
+}
+
+@media screen and (max-width: 1211px) {
+    .boton{
+        display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+    }
+}
+@media screen and (max-width: 675px) {
+    .boton{
+        display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .boton{
+        display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .boton{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+    }
 }

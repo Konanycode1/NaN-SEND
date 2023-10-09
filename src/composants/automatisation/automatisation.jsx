@@ -7,8 +7,9 @@ import { AiOutlineCheck, AiFillStar, AiOutlineStar, AiOutlinePlus, AiOutlineCame
 import {MdInsertEmoticon} from "react-icons/md"
 
 import things from "../../assets/images/pourDashboard.jpeg";
+import img1 from "../../assets/images/Message.png";
+  import img2 from "../../assets/images/callCenter.jpeg";
 function Automatisation() {
-
   return (
     <div>
       <div className="colore">
@@ -138,8 +139,12 @@ function Automatisation() {
 
       <div className="supervisor">
         <div className="separe">
-          <div className="carre"></div>
-          <div className="carre"></div>
+          <div className="carre">
+            <img src={img1} alt="" />
+          </div>
+          <div className="carre">
+            <img src={img2} alt="" />
+          </div>
         </div>
 
         <div className="tire">
@@ -161,8 +166,12 @@ function Automatisation() {
         </div>
 
         <div className="separe">
-          <div className="carre"></div>
-          <div className="carre"></div>
+          <div className="carre">
+          <img src={img2} alt="" />
+          </div>
+          <div className="carre">
+          <img src={img1} alt="" />
+          </div>
         </div>
       </div>
 
