@@ -1,12 +1,13 @@
-/* .container {
+.ensemble {
   width: 50%;
-  height: 73vh;
+  height: 78vh;
   display: flex;
   position: relative;
   background-color: #ffff;
-  margin-top: 10vh;
   padding-left: 3vw;
   padding-top: 8vh;
+  margin: auto;
+  top: 10vh;
 }
 
 .form {
@@ -19,17 +20,17 @@
   margin: 1em 0 1em 0;
   width: 100%;
   position: relative;
+  padding-top: 15px;
 }
 
 .cadre :focus ~ label,
 .cadre:valid ~ label {
-  transform: translateY(-50%) scale(0.9);
-  margin: 0em;
+  transform: translateY(-100%) scale(0.9);
   border-radius: 10px;
-  padding: 0.4em;
+  padding: 0.2em;
   background-color: #6870e0;
   color: #ffff;
-  top: fixed;
+  margin-bottom: -30px;
 }
 
 .form button {
@@ -47,7 +48,7 @@
 }
 
 .form button:hover:before {
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .form button:hover {
@@ -64,23 +65,20 @@
 .cadre input,
 .code input {
   color: white;
-  width: 0%;
-  font-size: 1.3rem;
-  padding: 0.5em;
-  outline: none;
+  font-size: 1rem;
   color: #262935;
   border: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.339);
   background: transparent;
   border-radius: 1px;
   width: 100%;
-  resize: none;
 }
 
 .cadre label {
-  font-size: 16px;
+  font-size: 1.2rem;
   position: absolute;
   left: 0;
+  bottom: 2vh;
   color: #262935;
   padding: 0.7em;
   margin-left: 0.1em;
@@ -98,4 +96,57 @@
   margin-top: 3vh;
   padding: 5px;
   font-family: sans-serif;
-} */
+}
+
+/* Verification*/
+.cannaux ul {
+  width: 50%;
+  position: relative;
+  height: 25vh;
+  display: flex;
+}
+
+.cannaux ul li {
+  list-style: none;
+  margin: auto;
+}
+
+.cannaux img {
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.cannaux ul li a {
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+}
+
+.lien {
+  background-color: #6870e0;
+  margin: auto;
+}
+
+.choix {
+  background-color: red;
+  /* position: relative;
+  right: 22vw; */
+  margin-top: 20px;
+}
+
+.input button {
+  float: left;
+  margin-left: 80%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #6870e0;
+  margin-top: 3vh;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+.choix input{
+  position: absolute;
+}
