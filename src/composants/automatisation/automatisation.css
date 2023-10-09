@@ -82,6 +82,41 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #6870E0;
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    cursor: pointer;
+    /* margin: 0 20px; */
+}
+
+.bull .saiPas{
+    position: absolute;
+    bottom: -95px;
+    width: 250px;
+    height: 100px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    /* transform: translateX(10%); */
+}
+
+.bull .saiPas:before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    background: #fff;
+    bottom: 90;
+    transform: rotate(45deg);
+}
+
+.bull:hover .saiPas{
+    visibility: visible;
+    opacity: 1;
 }
 
 .icon{
@@ -184,6 +219,8 @@ text-align: center;
     color: white;
     align-items: center;
 }
+
+
 
 .etoile{
     display: flex;

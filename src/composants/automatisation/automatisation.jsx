@@ -44,7 +44,11 @@ function Automatisation() {
               </p>
 
               <div className="ball">
-                <div className="bull"></div>
+                <div className="bull">
+                <div className="saiPas">
+                  <p>ytfjhyvhhgjhvjhjjhvjgh,vnjhvjhvjgjjgjhngfdc</p>
+                  </div> 
+                </div>
                 <div className="tracer"></div>
               </div>
             </div>
