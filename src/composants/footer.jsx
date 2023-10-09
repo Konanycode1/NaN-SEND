@@ -161,7 +161,7 @@ function Footer() {
               className="container my-3"
               style={{ border: "1.5px solid #c7caf6" }}
             />
-
+ 
             <section className="p-3 pt-0 bas">
               <div className="row d-flex align-items-center">
                 <div className="col-md-7 col-lg-8 text-center text-md-start">
