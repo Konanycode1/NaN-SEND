@@ -2,6 +2,7 @@ import React from 'react'
 import "../assets/css/contact.css"
 import TopBar from "../composants/topBar"
 import SideBar from '../composants/sideBard'
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,12 +20,12 @@ export default function Contacts() {
                                 <div className="col-sm-7">
                                     <form class="d-flex input-group " role="search">
                                         <input class="form-control me-2" type="search" placeholder="Rechercher un contact" aria-label="Search" aria-describedby="inputGroupPrepend2"/>
-                                        <button class="btn btn-outline-success btnRecherche" type="submit">Rechercher</button>
+                                        <Link><button class="btn btn-outline-success btnRecherche" type="submit">Rechercher</button></Link>
                                     </form>
                                 </div>
-                                
+                                                               
                                 <div className="col-sm-4 mx-auto d-flex justify-content-around contactBtnCard">
-                                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Contact d’mportation </button>
+                                    <Link to={"/importContact"}><button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Contact d’mportation </button></Link>
                                     <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Ajouter le contact</button>
                                 </div>
                             </div>
@@ -88,14 +89,16 @@ export default function Contacts() {
                                 </table>
                             </div>
                         </div>
-                        <div class="card mb-4 float-sm-end">
-                            <div class="card-body row d-flex justify-content-center col-sm-4 p-2">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <div>1</div>
-                                <div>2</div>
-                                <div>3</div>
-                                <div>4</div>
-                                <i class="fa-solid fa-angle-right"></i>
+                        <div class="card mb-4 float-sm-end contactCardChange">
+                            <div class="card-body row col-sm-4 ">
+                                <div className='d-flex'>
+                                    <Link><i class="fa-solid fa-angle-left"></i></Link>
+                                    <Link className='ultime'>1</Link>
+                                    <Link>2</Link>
+                                    <Link>3</Link>
+                                    <Link>4</Link>
+                                    <Link><i class="fa-solid fa-angle-right"></i></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

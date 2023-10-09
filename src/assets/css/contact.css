@@ -18,3 +18,16 @@
     color: #ffffff9c;
     background-color: #6870E0;
 }
+.contactCardChange{
+    border: none;
+    background: none;
+}
+.contactCardChange a{
+    color: #FFF;
+}
+.contactCardChange a:hover{
+    color: #6870E0;
+}
+.contactCardChange .ultime{
+    color: #6870E0;
+}
