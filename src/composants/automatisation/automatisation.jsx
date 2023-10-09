@@ -17,7 +17,7 @@ import img1 from "../../assets/images/Message.png";
 import img2 from "../../assets/images/callCenter.jpeg";
 function Automatisation() {
   return (
-    <div>
+    <div className="Automatisation">
       <div className="colore">
         <div className="container">
           <div className="titre">
