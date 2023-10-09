@@ -4,37 +4,37 @@
   box-sizing: border-box;
 }
 
-footer {
+.foot_er footer {
   background-color: #262935;
   width: 100%;
 }
-.footer {
+.foot_er .footer {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
 }
 
-.footer .section1 {
+.foot_er .footer .section1 {
   width: 40%;
   margin-top: 20px;
   font-family: sans-serif;
 }
 
-.section1 h1 {
+.foot_er .section1 h1 {
   font-size: 3rem;
 }
 
-.section1 p {
+.foot_er .section1 p {
   font-size: 20px;
 }
 
-.footer .BoxCard {
+.foot_er .footer .BoxCard {
   width: 60%;
   display: flex;
   padding: 30px;
 }
 
-.BoxCard .card {
+.foot_er .BoxCard .card {
   width: 40%;
   background-color: #ffff;
   padding-left: -40px;
@@ -44,20 +44,20 @@ footer {
   overflow: hidden;
 }
 
-.card p {
+.foot_er .card p {
   font-size: 1.2rem;
   font-family: sans-serif;
   font-style: arial;
   color: #262935;
 }
-.card p i {
+.foot_er .card p i {
   margin-right: 40px;
   color: #6870e0;
   align-items: center;
   font-weight: bolder;
 }
 
-.card .butonCard {
+.foot_er .card .butonCard {
   width: 50%;
   padding: 10px;
   margin: auto;
@@ -67,7 +67,7 @@ footer {
   color: #262935;
 }
 
-:hover.card .butonCard {
+.foot_er :hover.card .butonCard {
   width: 50%;
   padding: 10px;
   margin: auto;
@@ -77,42 +77,42 @@ footer {
   color: #fff;
 }
 
-:hover .bas a {
+.foot_er :hover .bas a {
   color: #ffff;
   font-size: 1.5rem;
   padding: 5px;
 }
-:hover.fa-whatsapp {
+.foot_er :hover.fa-whatsapp {
   color: #6870e0;
 }
-:hover.fa-youtube {
+.foot_er :hover.fa-youtube {
   color: #6870e0;
 }
-:hover.fa-twitter {
+.foot_er :hover.fa-twitter {
   color: #6870e0;
 }
-:hover.fa-linkedin {
+.foot_er :hover.fa-linkedin {
   color: #6870e0;
 }
-:hover.fa-telegram {
+.foot_er :hover.fa-telegram {
   color: #6870e0;
 }
-:hover.fa-facebook-f {
+.foot_er :hover.fa-facebook-f {
   color: #6870e0;
 }
 
-h5 {
+.foot_er h5 {
   margin-bottom: 40px;
   font-size: 1.4rem;
   color: #6870e0;
 }
-.rait {
+.foot_er .rait {
   width: 100%;
   height: 30px;
   color: #fff;
 }
 
-input {
+.foot_er input {
   padding: 10px;
   outline: none;
   background: none;
@@ -128,27 +128,27 @@ input {
 /*ordinat*/
 
 @media screen and (min-width: 1024px) {
-  .footer {
+  .foot_er .footer {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
+  .foot_er .footer {
     flex-direction: column;
   }
-  .footer .section1 {
+  .foot_er .footer .section1 {
     width: 100%;
   }
-  .footer .BoxCard {
+  .foot_er .footer .BoxCard {
     width: 100%;
   }
 
-  .footer .BoxCard {
+  .foot_er .footer .BoxCard {
     flex-direction: column;
     margin: 20px;
   }
-  .BoxCard .card {
+  .foot_er .BoxCard .card {
     width: 55%;
     margin: auto;
     height: 13vh;

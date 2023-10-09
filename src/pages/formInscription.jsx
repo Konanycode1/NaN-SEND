@@ -33,32 +33,51 @@ function Formulaire() {
               <label htmlFor="name">Nom</label>
             </div>
             <div className="input">
-              <input required="" autoComplete="off" type="text"
-               style={{ width: "70%" }} />
+              <input
+                required=""
+                autoComplete="off"
+                type="text"
+                style={{ width: "70%" }}
+              />
               <label htmlFor="name">Site web</label>
             </div>
             <div className="input">
-              <input required="" autoComplete="off" type="number"
-               style={{ width: "70%" }} />
+              <input
+                required=""
+                autoComplete="off"
+                type="number"
+                style={{ width: "70%" }}
+              />
               <label htmlFor="name">Numéro de téléphone</label>
             </div>
             <div className="input">
-              <input required="" autoComplete="off" type="number"
-               style={{ width: "70%" }} />
+              <input
+                required=""
+                autoComplete="off"
+                type="number"
+                style={{ width: "70%" }}
+              />
               <label htmlFor="name">Taille</label>
             </div>
             <div className="input">
-              <input required="" autoComplete="off" type="text"
-               style={{ width: "70%" }} />
+              <input
+                required=""
+                autoComplete="off"
+                type="text"
+                style={{ width: "70%" }}
+              />
               <label htmlFor="name">Industrie</label>
             </div>
             <div className="input">
-              <input required="" autoComplete="off" type="text"
-               style={{ width: "70%" }} />
+              <input
+                required=""
+                autoComplete="off"
+                type="text"
+                style={{ width: "70%" }}
+              />
               <label htmlFor="name">Role</label>
               <button>Etape suivante →</button>
             </div>
-            
           </section>
         </div>
       </div>

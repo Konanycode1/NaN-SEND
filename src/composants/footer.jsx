@@ -4,7 +4,7 @@ import imgLogo from "./../assets/images/log.png";
 function Footer() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="foot_er container-fluid">
         <footer className="text-center text text-white fixed-top">
           <div className="container-fluid footer">
             <div className="section1">
