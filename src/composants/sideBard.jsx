@@ -13,15 +13,17 @@ export default function SideBar() {
                             </a>
                             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                                 <li class="nav-item">
+                                    <Link to={"/dashboard"}>
                                     <a href="#" class="nav-link align-middle px-0" id="ClickHover">
                                     <i class="fa-solid fa-border-all "></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
                                     </a>
+                                    </Link>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <Link to={"/contacts"}><a href="#" class="nav-link align-middle px-0">
                                     <i class="fa-solid fa-users"></i> <span class="ms-1 d-none d-sm-inline">Contacts</span>
-                                    </a>
+                                    </a></Link>
                                 </li>
 
                                 <li class="nav-item">
@@ -37,9 +39,9 @@ export default function SideBar() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <Link to={"/profile"}><a href="#" class="nav-link align-middle px-0">
                                     <i class="fa-regular fa-circle-user"></i> <span class="ms-1 d-none d-sm-inline">Profils</span>
-                                    </a>
+                                    </a></Link>
                                 </li>
 
                                 <li class="nav-item">
@@ -49,9 +51,9 @@ export default function SideBar() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <Link to={"/rapports"}><a href="#" class="nav-link align-middle px-0">
                                     <i class="fa-solid fa-comments"></i>  <span class="ms-1 d-none d-sm-inline">Repports</span>
-                                    </a>
+                                    </a></Link>
                                 </li>
 
                                 <li class="nav-item">

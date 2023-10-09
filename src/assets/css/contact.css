@@ -1,0 +1,20 @@
+.cardContact{
+    background: none;
+    border: none;
+}
+.contactBtnCard button{
+    background-color: #6870E0;
+    border: #6870E0;
+}
+.contactBtnCard button:hover{
+    color: #ffffff9c;
+    background-color: #6870E0;
+}
+.cardContact .btnRecherche{
+    color: #FFF;
+    border: 1px solid #6870E0;
+}
+.cardContact .btnRecherche:hover{
+    color: #ffffff9c;
+    background-color: #6870E0;
+}

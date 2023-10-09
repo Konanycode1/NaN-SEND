@@ -1,8 +1,7 @@
 import React from 'react'
-import "../assets/css/dash.css"
+import "../assets/css/rapport.css"
 import TopBar from "../composants/topBar"
 import SideBar from '../composants/sideBard'
-
 
 
 export default function Rapports() {

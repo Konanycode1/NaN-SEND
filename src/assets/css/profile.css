@@ -8,8 +8,6 @@
 }
 .profilCard .card{
     border: none;
-    color: #FFF;
-    background-color: #272935;
 }
 .profile_Email hr{
     border: 1px solid dotted #272935;
@@ -23,6 +21,31 @@
     margin: 0px;
     padding: 0;
 }
+.profilebtn button{
+    background-color: #6870E0;
+    border: 1px solid #6870E0;
+    border-top-left-radius: 1px;
+}
+.profilebtn button:hover{
+    background-color: #FFF;
+    color: #6870E0;
+    border: 1px solid #6870E0;
+}
+.profilebtn h3{
+    color: #6870E0;
+}
+.cardOnline{
+    background-color: #272935;
+    color: #fff;
+    border-radius: 30px;
+}
+.cardOnline i{
+    color: greenyellow;
+    font-size: 30px;
+}
+
+
+
 @media (max-width:1355px) {
     .cardProfilImg {
         position: relative;

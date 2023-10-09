@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../assets/css/dash.css"
 import TopBar from "../composants/topBar"
 import SideBar from '../composants/sideBard'
@@ -25,10 +26,13 @@ export default function Profile() {
                                         <div className="mx-auto col-6 mb-4 cardProfilImg">
                                             <img src={person} alt="" className="rounded-circle" />
                                         </div>
+                                        <div className="mx-auto d-flex justify-content-evenly cardOnline col-6 p-2">
+                                        <i class="fa-solid fa-circle"></i> <h4>En ligne</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mt-5 profile_Email">
+                            <div class="col-sm-6 mt-5 profile_Email p-5">
                                 <div class="card mt-5">
                                     <div class="card-body ">
                                         <div class="card ">
@@ -51,6 +55,11 @@ export default function Profile() {
                                                 <p className="mt-5">Français</p>
                                             </div>
                                             <hr />
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body d-flex profilebtn justify-content-between">
+                                                <h3>Changer le mot de passe</h3><Link to={"/dashboard"}><button type="button" class="btn btn-primary ">Enregistrer le profil</button></Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
