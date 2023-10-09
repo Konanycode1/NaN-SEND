@@ -1,5 +1,4 @@
 import "../assets/css/messages.css"
-import Fil from "./fil"
 import { Link } from "react-router-dom"
 
 
@@ -38,7 +37,7 @@ export default function Message() {
                                         <option value="">Telegramme</option>
                                         <option value="">Message</option>
                                     </select>
-                                    <button type="button" class="btn btn-secondary">Envoyer la diffusion</button>
+                                    <button type="button" className="btn btn-secondary">Envoyer la diffusion</button>
                                 </div>
                             </div>
                         </div>

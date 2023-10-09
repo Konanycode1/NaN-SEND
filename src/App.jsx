@@ -7,8 +7,7 @@ import Dashboard from './pages/Dashboard'
 import Accueil from './pages/Acceuil'
 import Profiles from './pages/Profile'
 import Rapports from './pages/Rapport'
-import React, { Suspense } from "react";
-import "./App.css";
+// import React, { Suspense } from "react";
 import NavBar from "./composants/NavBar";
 import ComposantBienvenu from "./composants/ComposantBienvenu";
 import Login from "./assets/css/Login";
@@ -24,7 +23,7 @@ import Automatisation from './composants/automatisation/Automatisation';
 function App() {
   return (
     <>
-      <BrowserRouter>
+   
         <Routes>
             <Route path="/contacts" element={<Contacts/>}/>
             <Route path="/rapports" element={<Rapports/>}/>
@@ -42,9 +41,9 @@ function App() {
             <Route path="/Connexion" element= {<Connexion/>} />
             <Route path="/Inscription" element= {<Inscription/>} />
             <Route path="/Formulaire" element= {<Formulaire/>} />
-            <Route path="/" element={<Automatisation />}/> 
+            <Route path="/automatisation" element={<Automatisation />}/> 
       </Routes>
-    </BrowserRouter>
+
   </>
   )
 }

@@ -104,7 +104,7 @@ function ComposantBienvenu() {
                 personnes sans avoir a ecrire plusieurs fois le message
               </h4>
             </div>
-            <button class="cta">
+            <button className="cta">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>
@@ -127,7 +127,7 @@ function ComposantBienvenu() {
                 communication.
               </h4>
             </div>
-            <button class="cta">
+            <button className="cta">
               <span>
                 {" "}
                 <Link to="/Login" className="lien-voirplus">
@@ -152,7 +152,7 @@ function ComposantBienvenu() {
                 notamment WhatsApp, Message ou par Email.
               </h4>
             </div>
-            <button class="cta">
+            <button className="cta">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>
@@ -175,7 +175,7 @@ function ComposantBienvenu() {
                 sécurité via tous nos canaux de diffusion.
               </h4>
             </div>
-            <button class="cta">
+            <button className="cta">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>

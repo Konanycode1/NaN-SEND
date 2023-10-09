@@ -12,14 +12,14 @@ function NavBar() {
 
     close.style.display = "block";
     close.addEventListener("click", (evn) => {
-      nav.current.classList.remove("active");
+      nav.current.classNameList.remove("active");
       event.target.style.display = "block";
       evn.target.style.display = "none";
     });
 
     event.target.style.display = "none";
     console.log(event.target);
-    nav.current.classList.toggle("active");
+    nav.current.classNameList.toggle("active");
     
   };
   return (

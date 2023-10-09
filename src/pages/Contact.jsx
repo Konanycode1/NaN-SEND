@@ -9,30 +9,30 @@ export default function Contacts() {
     return(
         <body className="dash">
             <TopBar/>
-            <div class="container-fluid mt-4">
-                <div class="row flex-nowrap">
+            <div className="container-fluid mt-4">
+                <div className="row flex-nowrap">
                     <SideBar />
 
-                    <div class="col py-3 cardRassemblement">
-                        <div class="card mb-4 cardContact">
-                            <div class="card-body d-flex justify-content-between row ">
+                    <div className="col py-3 cardRassemblement">
+                        <div className="card mb-4 cardContact">
+                            <div className="card-body d-flex justify-content-between row ">
                                 <div className="col-sm-7">
-                                    <form class="d-flex input-group " role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Rechercher un contact" aria-label="Search" aria-describedby="inputGroupPrepend2"/>
-                                        <button class="btn btn-outline-success btnRecherche" type="submit">Rechercher</button>
+                                    <form className="d-flex input-group " role="search">
+                                        <input className="form-control me-2" type="search" placeholder="Rechercher un contact" aria-label="Search" aria-describedby="inputGroupPrepend2"/>
+                                        <button className="btn btn-outline-success btnRecherche" type="submit">Rechercher</button>
                                     </form>
                                 </div>
                                 
                                 <div className="col-sm-4 mx-auto d-flex justify-content-around contactBtnCard">
-                                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Contact d’mportation </button>
-                                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Ajouter le contact</button>
+                                    <button type="button" className="btn btn-primary"><i className="fa-solid fa-plus"></i> Contact d’mportation </button>
+                                    <button type="button" className="btn btn-primary"><i className="fa-solid fa-plus"></i> Ajouter le contact</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card mb-4 p-4">
-                            <div class="card-body d-flex justify-content-between row p-4">
-                                <table class="table">
+                        <div className="card mb-4 p-4">
+                            <div className="card-body d-flex justify-content-between row p-4">
+                                <table className="table">
                                     <thead>
                                         <tr>
                                         <th scope="col"></th>
@@ -45,7 +45,7 @@ export default function Contacts() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        <th scope="row form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
+                                        <th scope="row form-check"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
                                         <td >Abraham konan</td>
                                         <td>abrahamkonany@gmail.com </td>
                                         <td>+2250141822918</td>
@@ -53,7 +53,7 @@ export default function Contacts() {
                                         <td>Français</td>
                                         </tr>
                                         <tr>
-                                        <th scope="row form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
+                                        <th scope="row form-check"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
                                         <td >Abraham konan</td>
                                         <td>abrahamkonany@gmail.com </td>
                                         <td>+2250141822918</td>
@@ -61,7 +61,7 @@ export default function Contacts() {
                                         <td>Français</td>
                                         </tr>
                                         <tr>
-                                        <th scope="row form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
+                                        <th scope="row form-check"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
                                         <td >Abraham konan</td>
                                         <td>abrahamkonany@gmail.com </td>
                                         <td>+2250141822918</td>
@@ -69,7 +69,7 @@ export default function Contacts() {
                                         <td>Français</td>
                                         </tr>
                                         <tr>
-                                        <th scope="row form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
+                                        <th scope="row form-check"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
                                         <td >Abraham konan</td>
                                         <td>abrahamkonany@gmail.com </td>
                                         <td>+2250141822918</td>
@@ -77,7 +77,7 @@ export default function Contacts() {
                                         <td>Français</td>
                                         </tr>
                                         <tr>
-                                        <th scope="row form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
+                                        <th scope="row form-check"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></th>
                                         <td >Abraham konan</td>
                                         <td>abrahamkonany@gmail.com </td>
                                         <td>+2250141822918</td>
@@ -88,14 +88,14 @@ export default function Contacts() {
                                 </table>
                             </div>
                         </div>
-                        <div class="card mb-4 float-sm-end">
-                            <div class="card-body row d-flex justify-content-center col-sm-4 p-2">
-                                <i class="fa-solid fa-angle-left"></i>
+                        <div className="card mb-4 float-sm-end">
+                            <div className="card-body row d-flex justify-content-center col-sm-4 p-2">
+                                <i className="fa-solid fa-angle-left"></i>
                                 <div>1</div>
                                 <div>2</div>
                                 <div>3</div>
                                 <div>4</div>
-                                <i class="fa-solid fa-angle-right"></i>
+                                <i className="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                     </div>
