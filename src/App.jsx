@@ -7,10 +7,21 @@ import Dashboard from './pages/Dashboard'
 import Accueil from './pages/Acceuil'
 import Profiles from './pages/Profile'
 import Rapports from './pages/Rapport'
+import React, { Suspense } from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import NavBar from "./composants/NavBar";
+import ComposantBienvenu from "./composants/ComposantBienvenu";
+import Login from "./assets/css/Login";
+import Register from "./assets/css/Register";
+import Slider from "./composants/Slider";
 
 function App() {
-
-
   return (
     <>
     <BrowserRouter>
@@ -21,10 +32,16 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/fil" element={<Fil/>}/>
         <Route path="/" element={<Accueil/>}/>
-      </Routes>
-    </BrowserRouter>
+     
+          <Route path="/NavBar" element={<NavBar />} />
+          <Route path="/ComposantBienvenu" element={<ComposantBienvenu />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Slider" element={<Slider/>} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

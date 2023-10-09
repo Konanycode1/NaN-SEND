@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 import "../assets/css/fil.css"
 import images from "../assets/images/whatsapp1.png"
 
+=======
+import "../css/fil.css"
+>>>>>>> 375f358201e90c849d97bb1e31190b278f9b6f15
 
 export default function Fil() {
     return(
         <>
+<<<<<<< HEAD
             <div className="cardFils">
                 <div className="row">
                 <div className="col-sm-7 mb-3 mb-sm-0">
@@ -28,6 +33,10 @@ export default function Fil() {
                 </div>
                 </div>
             </div>
+=======
+        
+        
+>>>>>>> 375f358201e90c849d97bb1e31190b278f9b6f15
         </>
     )
 }
