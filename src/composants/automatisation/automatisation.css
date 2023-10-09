@@ -1,33 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.Automatisation .container{
+/*
+.container{
     max-width: 1140px;
     margin: 0 auto;
 }
-.Automatisation .titre{
+.titre{
     text-align: center;
 }
 
-.Automatisation .titre h1{
+.titre h1{
     color: white;
 }
 
-.Automatisation .barre{
+.barre{
     background-color:  #6870E0;
     color: white;
 }
 
-.Automatisation .colore{
+.colore{
     height: 70vh;
     width: 100%;
     background-color: #262935;
 }
-
-.Automatisation .boton{
+*/
+.boton{
     /* display: flex;
     justify-content: space-between;
     margin-top: 75px; */
@@ -38,7 +33,7 @@
   grid-auto-rows: minmax(100px, auto);
   align-items: end;
 }
-.Automatisation .etpe{
+/* .etpe{
     height: 40px;
     width: 150px;
     border: 1px solid #6870E0;
@@ -47,7 +42,7 @@
     color: white;
     cursor: pointer;
 }
-.Automatisation .etpe1{
+.etpe1{
     height: 40px;
     width: 150px;
     border: 1px solid #6870E0;
@@ -57,23 +52,23 @@
     cursor: pointer;
 }
 
-.Automatisation .etpe1:hover{
+.etpe1:hover{
     background-color: #6870E0;
     color: white;
 }
 
-.Automatisation .flex{
+.flex{
     display: flex;
     margin-top: 105px;
     justify-content: space-between;
 
 }
 
-.Automatisation .flex p{
+.flex p{
     color: white;
-}
+} */
 
-.Automatisation .bull{
+.bull{
     height: 60px;
     width: 60px;
     border: 1px solid #6870E0;
@@ -82,14 +77,47 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #6870E0;
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.Automatisation .icon{
+.bull .saiPas{
+    position: absolute;
+    bottom: -95px;
+    width: 250px;
+    height: 100px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.bull .saiPas:before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    background: #fff;
+    bottom: 90;
+    transform: rotate(45deg);
+}
+
+.bull:hover .saiPas{
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon{
     font-size: 25px;
     color: white;
 }
 
-.Automatisation .bulle{
+.bulle{
     height: 60px;
     width: 60px;
     border: 1px solid #6870E0;
@@ -100,34 +128,32 @@
     align-items: center;
 }
 
-.Automatisation .tracer{
+.tracer{
     height: 1px;
     width: 100px;
     border: 1px dashed #6870E0;
 }
 
-.Automatisation .ball{
+.ball{
     display: flex;
     align-items: center;
 }
 
-/* .chat{
-    margin-left: 65px;
-} */
 
-.Automatisation .chat h4{
+
+.chat h4{
     text-align: center;
     font-size: 2rem;
     color: #6870E0;
 }
 
-.Automatisation .texto p{
+.texto p{
     text-align: center;
     margin-top: 10px;
     color: white;
 }
 
-.Automatisation .trai{
+.trai{
     width: 100%;
     height: 1px;
     border: 1px solid #6870E0;
@@ -138,70 +164,72 @@
 
 
 /* DEUXIEME PARTIE */
-.Automatisation .separe{
+.separe{
     display: flex;
     justify-content: space-between;
 }
-.Automatisation .carre{
+.carre{
     height: 600px;
     width: 600px;
     /* border: 1px solid red; */
 }
-.Automatisation .carre img{
+.carre img{
     height:100%;
     width: 100%;
     object-fit: cover;
 }
-.Automatisation .tire{
+.tire{
 text-align: center;
 }
-.Automatisation .loi{
+.loi{
     display: flex;
     justify-content: center;
 }
-.Automatisation .par{
+.par{
     height: 150px;
     width: 500px;
 }
 
 /* TROISIEME PARTIE */
-.Automatisation .send{
+.send{
     height: 63vh;
     width: 100%;
     border: 1px solid #6870e0;
     background-color: #6870e0;
     margin-top: 10px;
 }
-.Automatisation .premiText{
+.premiText{
     margin-top: 20%;
 }
 
-.Automatisation .misApart h1{
+.misApart h1{
     color: white;
 }
 
-.Automatisation .paragraphe p{
+.paragraphe p{
     color: white;
     align-items: center;
 }
 
-.Automatisation .etoile{
+
+
+.etoile{
     display: flex;
 }
 
-.Automatisation .etoile p{
+.etoile p{
     color: white;
 }
-.Automatisation .flax{
+.flax{
     display: flex;
     justify-content: space-evenly;
 }
 
-.Automatisation .cool{
+.cool{
     display: flex;
     gap: 30px;
 }
-.Automatisation .caro{
+.caro{
     height: 200px;
     width: 300px;
     border: 1px solid white;
@@ -210,7 +238,7 @@ text-align: center;
     border-radius: 10px;
     background-color: white;
 }
-.Automatisation .second{
+.second{
     margin-top: 5px;
     height: 140px;
     width: 270px;
@@ -219,24 +247,24 @@ text-align: center;
     border-radius: 10px;
 }
 
-.Automatisation .forImg{
+.forImg{
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.Automatisation .photo img{
+.photo img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
-.Automatisation .ico{
+.ico{
     font-size: 25px;
     color: #6870E0;
 }
 
-.Automatisation .bout{
+.bout{
     height: 45px;
     width: 100%;
     /* border: 1px solid red; */
@@ -245,16 +273,16 @@ text-align: center;
     align-items: center;
     background-color: #f5f5f5;
 }
-.Automatisation .search{
+.search{
     display: flex;
     align-items: center;
 }
 
-.Automatisation .fin{
+.fin{
     display: flex;
     gap: 15px;
 }
-.Automatisation .recher{
+.recher{
     height: 30px;
     width: 190px;
     border: 1px solid #f5f5f5;
@@ -271,20 +299,20 @@ text-align: center;
     border-radius: 20px;
 }
 
-.Automatisation .ic{
+.ic{
     color: #6870E0;
 }
 
 
 @media screen and (max-width: 1323px) {
-    .Automatisation .boton{
+    .boton{
         display: grid;
   grid-template-columns: repeat(6, 1fr);
   
     }
 }
 @media screen and (max-width: 1311px) {
-    .Automatisation .boton{
+    .boton{
         display: grid;
   grid-template-columns: repeat(5, 1fr);
   
@@ -292,14 +320,14 @@ text-align: center;
 }
 
 @media screen and (max-width: 1211px) {
-    .Automatisation .boton{
+    .boton{
         display: grid;
   grid-template-columns: repeat(4, 1fr);
   
     }
 }
 @media screen and (max-width: 675px) {
-    .Automatisation .boton{
+    .boton{
         display: grid;
   grid-template-columns: repeat(4, 1fr);
   
@@ -307,7 +335,7 @@ text-align: center;
 }
 
 @media screen and (max-width: 656px) {
-    .Automatisation .boton{
+    .boton{
         display: grid;
   grid-template-columns: repeat(3, 1fr);
   
@@ -315,11 +343,10 @@ text-align: center;
 }
 
 @media screen and (max-width: 490px) {
-    .Automatisation .boton{
+    .boton{
         display: flex;
         display: flex;
         flex-direction: column;
         align-items: center;
-  
     }
 }
