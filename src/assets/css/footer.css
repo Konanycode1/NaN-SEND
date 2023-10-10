@@ -7,11 +7,16 @@
 .foot_er footer {
   background-color: #262935;
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .foot_er .footer {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
+  overflow-y: scroll;
 }
 
 .foot_er .footer .section1 {

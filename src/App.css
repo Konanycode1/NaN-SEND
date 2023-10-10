@@ -1,5 +1,5 @@
-*::after,*::before,*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#root {
+  width: 100vw;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
 }

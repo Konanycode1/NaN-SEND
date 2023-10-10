@@ -3,7 +3,7 @@ import "./../composants/form.css";
 function Formulaire() {
   return (
     <>
-      <div className="container">
+      <div className="Formulaire container">
         <div className="form">
           <div className="code">
             <label htmlFor="name" style={{ color: "#6870e0" }}>
