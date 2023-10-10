@@ -1,34 +1,70 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "../assets/css/NavBar.css";
 import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { RiEyeCloseLine } from "react-icons/ri";
+
 function NavBar() {
   const nav = useRef(null);
-  const toggle = (event) => {
-    const close = document.getElementById("close");
-    close.style.display = "block";
-    close.addEventListener("click", (evn) => {
-      nav.current.classList.remove("active");
-      event.target.style.display = "block";
-      evn.target.style.display = "none";
-    });
-    event.target.style.display = "none";
-    console.log(event.target);
-    nav.current.classList.toggle("active");
+  const burger = useRef(null);
+  const close = useRef(null);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggle = () => {
+    if (nav.current) {
+      nav.current.classList.toggle("active");
+      burger.current.style.display = "none";
+      close.current.style.display = "block";
+    }
   };
+
+  const closeMenu = () => {
+    nav.current.classList.remove("active");
+    burger.current.style.display = "block";
+    close.current.style.display = "none";
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <>
-      <div className="laNav">
-        <nav>
-          <a href="#">
-            <span className="reactIcon-logo">
-              <BiSolidMessageRoundedDots />
+    <div className="NavbarComponent">
+      <nav>
+        <a href="#">
+          <span className="reactIcon-logo">
+            <BiSolidMessageRoundedDots />
+          </span>
+          <span className="span1">NaN-</span>
+          <span className="span2">SEND</span>
+        </a>
+        {isMobile ? (
+          <>
+            <span
+              className="menuBurger"
+              onClick={toggle}
+              ref={burger}
+              id="burger"
+            >
+              <TfiMenuAlt />
             </span>
-            <span className="span1">NaN-</span>
-            <span className="span2">SEND</span>
-          </a>
+            <span className="close" onClick={closeMenu} ref={close} id="close">
+              <RiEyeCloseLine />
+            </span>
+          </>
+        ) : (
           <ul className="navbar" ref={nav}>
             <li>
               <a href="" className="Acceuil-active">
@@ -45,20 +81,15 @@ function NavBar() {
               <a href="">Contact</a>
             </li>
           </ul>
-          <div className="partie-login">
-            <Link to="/Login" className="btn">
-              Se connecter
-            </Link>
-          </div>
-          <span className="menuBurger" onClick={toggle} id="burger">
-            <TfiMenuAlt />
-          </span>
-          <span className="close" id="close">
-            <RiEyeCloseLine />
-          </span>
-        </nav>
-      </div>
-    </>
+        )}
+        <div className="partie-login">
+          <Link to="/Login" className="btn">
+            Se connecter
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 }
+
 export default NavBar;
