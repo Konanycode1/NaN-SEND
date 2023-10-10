@@ -4,13 +4,10 @@ import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { RiEyeCloseLine } from "react-icons/ri";
-
 function NavBar() {
   const nav = useRef(null);
-
   const toggle = (event) => {
     const close = document.getElementById("close");
-
     close.style.display = "block";
     close.addEventListener("click", (evn) => {
       nav.current.classList.remove("active");
@@ -18,11 +15,12 @@ function NavBar() {
       evn.target.style.display = "none";
     });
     event.target.style.display = "none";
+    console.log(event.target);
     nav.current.classList.toggle("active");
   };
   return (
     <>
-      <div className="Navbar">
+      <div className="laNav">
         <nav>
           <a href="#">
             <span className="reactIcon-logo">
@@ -31,7 +29,7 @@ function NavBar() {
             <span className="span1">NaN-</span>
             <span className="span2">SEND</span>
           </a>
-          <ul className="navlist" ref={nav}>
+          <ul className="navbar" ref={nav}>
             <li>
               <a href="" className="Acceuil-active">
                 Accueil
