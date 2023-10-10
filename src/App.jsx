@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Fil from "./composants/fil";
 import Contacts from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
-import Accueil from "./pages/Acceuil";
+import Acceuil from "./pages/Acceuil";
 import Profiles from "./pages/Profile";
 import Rapports from "./pages/Rapport";
 // import React, { Suspense } from "react";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/profile" element={<Profiles />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/fil" element={<Fil />} />
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Acceuil />} />
         <Route path="/NavBar" element={<NavBar />} />
         <Route path="/ComposantBienvenu" element={<ComposantBienvenu />} />
         <Route path="/Login" element={<Login />} />

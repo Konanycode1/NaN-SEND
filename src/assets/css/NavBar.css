@@ -4,18 +4,18 @@
   --mon--autre--couleur: #b6b9e5;
   --ma--couleur--text: #ffff;
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   font-family: "Montserrat Alternates", sans-serif;
-}
-.Link {
+} */
+.Navbar .Link {
   text-decoration: none;
 }
-nav {
+.Navbar nav {
   position: fixed;
   width: 100%;
   height: 5rem;
@@ -30,20 +30,20 @@ nav {
   background-color: var(--ma--couleur--text);
   box-shadow: var(--ma-couleur-bouton) 2px 2px 2px 2px;
 }
-.navbar {
+.Navbar .navlist {
   display: flex;
   column-gap: 5rem;
   font-size: 0.5rem +1.5vw;
 }
-.navbar li {
+.Navbar .navlist li {
   position: relative;
 }
-.navbar a {
+.Navbar .navlist a {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--ma-couleur-principale);
 }
-.navbar a::after {
+.Navbar .navlist a::after {
   content: "";
   width: 0;
   background-color: var(--ma-couleur-bouton);
@@ -53,26 +53,26 @@ nav {
   bottom: -4px;
   position: absolute;
 }
-.navbar a:hover:after {
+.Navbar .navlist a:hover:after {
   width: 100%;
 }
-.reactIcon-logo {
+.Navbar .reactIcon-logo {
   font-size: 3rem;
   margin-left: 1rem;
   color: var(--ma-couleur-bouton);
 }
-nav .span1 {
+.Navbar nav .span1 {
   color: var(--ma-couleur-principale);
   font-size: 1.8rem;
 }
-nav .span2 {
+.Navbar nav .span2 {
   color: var(--ma-couleur-bouton);
   font-size: 1.8rem;
 }
-.navbar .Acceuil-active {
+.Navbar .navlist .Acceuil-active {
   color: var(--ma-couleur-bouton);
 }
-.btn {
+.Navbar .btn {
   padding: 0.8rem 1.2rem;
   background-color: var(--ma-couleur-principale);
   border-radius: 1.5rem;
@@ -81,20 +81,20 @@ nav .span2 {
   color: var(--ma--couleur--text);
   box-shadow: 1px 1px 1px 1px solid grey;
 }
-.btn:hover {
+.Navbar .btn:hover {
   background-color: var(--ma-couleur-bouton);
   color: var(--ma--couleur--text);
   border: 2px solid var(--ma-couleur-bouton);
 }
-.menuBurger,
-.close {
+.Navbar .menuBurger,
+.Navbar .close {
   font-size: 2.5rem;
   color: var(--ma-couleur-bouton);
   display: none;
   cursor: pointer;
 }
 @media (max-width: 1020px) {
-  .navbar {
+  .Navbar .navlist {
     column-gap: 2rem;
     font-size: 0.2rem +1.4vw;
   }
@@ -102,24 +102,24 @@ nav .span2 {
     font-size: 2rem;
     margin-left: -3rem;
   }
-  nav .span1,
+  .Navbar nav .span1,
   .span2 {
     font-size: 1.6rem;
   }
-  .btn {
+  .Navbar .btn {
     padding: 0.6rem 1rem;
     border-radius: 1.3rem;
     font-weight: 400;
   }
 }
 @media (max-width: 768px) {
-  .menuBurger {
+  .Navbar .menuBurger {
     display: block;
   }
-  .btn {
+  .Navbar .btn {
     display: none;
   }
-  .navbar {
+  .Navbar .navlist {
     position: fixed;
     top: 8%;
     flex-direction: column;
@@ -130,16 +130,16 @@ nav .span2 {
     transition: 0.25s;
     left: -100%;
   }
-  .navbar li {
+  .Navbar .navlist li {
     padding: 20px 0;
   }
-  .navbar li:hover {
+  .Navbar .navlist li:hover {
     background-color: var(--mon--autre--couleur);
   }
-  .navbar a {
+  .Navbar .navlist a {
     font-size: 1.2rem;
   }
-  .navbar .Acceuil-active {
+  .Navbar .navlist .Acceuil-active {
     color: var(--ma--couleur--text);
   }
   .active {

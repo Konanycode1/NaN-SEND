@@ -7,24 +7,22 @@ import { RiEyeCloseLine } from "react-icons/ri";
 
 function NavBar() {
   const nav = useRef(null);
+
   const toggle = (event) => {
     const close = document.getElementById("close");
 
     close.style.display = "block";
     close.addEventListener("click", (evn) => {
-      nav.current.classNameList.remove("active");
+      nav.current.classList.remove("active");
       event.target.style.display = "block";
       evn.target.style.display = "none";
     });
-
     event.target.style.display = "none";
-    console.log(event.target);
-    nav.current.classNameList.toggle("active");
-    
+    nav.current.classList.toggle("active");
   };
   return (
     <>
-      <div className="laNav">
+      <div className="Navbar">
         <nav>
           <a href="#">
             <span className="reactIcon-logo">
@@ -33,7 +31,7 @@ function NavBar() {
             <span className="span1">NaN-</span>
             <span className="span2">SEND</span>
           </a>
-          <ul className="navbar" ref={nav}>
+          <ul className="navlist" ref={nav}>
             <li>
               <a href="" className="Acceuil-active">
                 Accueil
