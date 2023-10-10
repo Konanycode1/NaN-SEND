@@ -18,9 +18,9 @@ function Formulaire() {
           </div>
 
           <div className="input">
-            <label htmlFor="email" style={{ color: "#6870e0" }}>
+            <p htmlFor="email" style={{ color: "#6870e0" }}>
               Complétez vos coordonnées pour commencer.
-            </label>
+            </p>
           </div>
           <section className="cadre">
             <div className="input">
