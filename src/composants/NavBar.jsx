@@ -16,11 +16,9 @@ function NavBar() {
       event.target.style.display = "block";
       evn.target.style.display = "none";
     });
-
     event.target.style.display = "none";
     console.log(event.target);
     nav.current.classList.toggle("active");
-    
   };
   return (
     <>
