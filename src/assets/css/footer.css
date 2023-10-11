@@ -13,21 +13,17 @@ footer {
   justify-content: space-around;
   padding-top: 30px;
 }
-
 .footer .section1 {
   width: 40%;
   margin-top: 20px;
   font-family: sans-serif;
 }
-
 .section1 h1 {
   font-size: 3rem;
 }
-
 .section1 p {
   font-size: 20px;
 }
-
 .footer .BoxCard {
   width: 60%;
   display: flex;
@@ -67,6 +63,8 @@ footer {
   color: #262935;
 }
 
+
+
 :hover.card .butonCard {
   width: 50%;
   padding: 10px;
@@ -99,7 +97,7 @@ footer {
 }
 :hover.fa-facebook-f {
   color: #6870e0;
-}
+} 
 
 h5 {
   margin-bottom: 40px;
