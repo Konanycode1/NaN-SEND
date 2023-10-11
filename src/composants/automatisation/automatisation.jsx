@@ -144,9 +144,7 @@ function Automatisation() {
           </div>
         </div>
       </div>
-
       {/* DEUXIEME PARTIE */}
-
       <div className="supervisor">
         <div className="separe">
           <div className="carre">
@@ -156,7 +154,6 @@ function Automatisation() {
             <img src={img2} alt="" />
           </div>
         </div>
-
         <div className="tire">
           <h1>
             Tableau de bord <span className="barre">du superviseur</span>
