@@ -3,12 +3,18 @@ import "../automatisation/automatisation.css";
 import { RxHamburgerMenu, RxTarget } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiTimeFive, BiMicrophone } from "react-icons/bi";
-import { AiOutlineCheck, AiFillStar, AiOutlineStar, AiOutlinePlus, AiOutlineCamera } from "react-icons/ai";
-import {MdInsertEmoticon} from "react-icons/md"
+import {
+  AiOutlineCheck,
+  AiFillStar,
+  AiOutlineStar,
+  AiOutlinePlus,
+  AiOutlineCamera,
+} from "react-icons/ai";
+import { MdInsertEmoticon } from "react-icons/md";
 
 import things from "../../assets/images/pourDashboard.jpeg";
 import img1 from "../../assets/images/Message.png";
-  import img2 from "../../assets/images/callCenter.jpeg";
+import img2 from "../../assets/images/callCenter.jpeg";
 function Automatisation() {
   return (
     <div>
@@ -45,9 +51,9 @@ function Automatisation() {
 
               <div className="ball">
                 <div className="bull">
-                <div className="saiPas">
-                  <p>ytfjhyvhhgjhvjhjjhvjgh,vnjhvjhvjgjjgjhngfdc</p>
-                  </div> 
+                  <div className="saiPas">
+                    <p>ytfjhyvhhgjhvjhjjhvjgh,vnjhvjhvjgjjgjhngfdc</p>
+                  </div>
                 </div>
                 <div className="tracer"></div>
               </div>
@@ -171,10 +177,10 @@ function Automatisation() {
 
         <div className="separe">
           <div className="carre">
-          <img src={img2} alt="" />
+            <img src={img2} alt="" />
           </div>
           <div className="carre">
-          <img src={img1} alt="" />
+            <img src={img1} alt="" />
           </div>
         </div>
       </div>
@@ -207,7 +213,7 @@ function Automatisation() {
 
             <div className="cool">
               <div className="cara">
-              <div className="caro">
+                <div className="caro">
                   <div className="second">
                     <p>
                       La vision de NaN repose sur ce que doit être l’avenir de
@@ -225,26 +231,22 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
                 <br />
                 <div className="caro">
@@ -265,26 +267,22 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
                 <br />
                 <div className="caro">
@@ -305,31 +303,27 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
               </div>
 
               <div className="care">
-              <div className="caro">
+                <div className="caro">
                   <div className="second">
                     <p>
                       La vision de NaN repose sur ce que doit être l’avenir de
@@ -347,26 +341,22 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
                 <br />
                 <div className="caro">
@@ -387,26 +377,22 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
                 <br />
 
@@ -428,29 +414,23 @@ function Automatisation() {
                         <AiFillStar className="ico" />
                         <AiFillStar className="ico" />
                       </div>
-
-                     
                     </div>
 
                     <div className="bout">
-                    <div className="search">
-                    <AiOutlinePlus />
-                    <div className="recher">
-                        <input type="text" />
-                        <MdInsertEmoticon className="ic"/>
+                      <div className="search">
+                        <AiOutlinePlus />
+                        <div className="recher">
+                          <input type="text" />
+                          <MdInsertEmoticon className="ic" />
+                        </div>
+                        <div className="fin">
+                          <AiOutlineCamera />
+                          <BiMicrophone />
+                        </div>
+                      </div>
                     </div>
-                    <div className="fin">
-                    <AiOutlineCamera/>
-                    <BiMicrophone/>
-                    </div>
-                    
-                    </div>
-                  </div> 
                   </div>
-
                 </div>
-
-
               </div>
             </div>
           </div>

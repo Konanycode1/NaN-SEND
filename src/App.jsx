@@ -7,11 +7,9 @@ import Automatisation from './composants/automatisation/Automatisation';
 function App() {
 
   return (
-
       <Routes>
         <Route path="/" element={<Automatisation />}/> 
       </Routes>
-  )
+  ) 
 }
-
 export default App
