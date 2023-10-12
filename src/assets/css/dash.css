@@ -1,0 +1,58 @@
+.dash {
+  background-color: #272935;
+  width: 100%;
+  color: #fff;
+}
+#menu a {
+  color: #8e8e93;
+}
+
+#menu a i {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+  margin-top: 1.2rem;
+}
+#menu a span {
+  position: relative;
+  left: 1rem;
+  color: #272935;
+  font-weight: 400;
+}
+#menu a:hover {
+  color: #6870e097;
+  font-weight: 200;
+}
+#menu #ClickHover i {
+  color: #6870e0;
+}
+#menu #ClickHover span {
+  color: #6870e0;
+  font-weight: 500;
+}
+#btnBottom {
+  color: #272935;
+  text-align: center;
+}
+.dash a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .rapportCard2 td {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #btnBottom {
+    bottom: 0 !important;
+    padding: 5px !important;
+    display: block;
+    position: relative !important;
+    width: 10vw;
+  }
+  #btnBottom h5 {
+    font-size: 0.5rem;
+  }
+  #btnBottom h6 {
+    font-size: 0.5rem;
+  }
+}
