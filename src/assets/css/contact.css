@@ -1,33 +1,58 @@
-.cardContact{
-    background: none;
-    border: none;
+.Contact {
+  background-color: #272935;
+  width: 100%;
+  color: #fff;
 }
-.contactBtnCard button{
-    background-color: #6870E0;
-    border: #6870E0;
+.Contact #menu a {
+  color: #8e8e93;
 }
-.contactBtnCard button:hover{
-    color: #ffffff9c;
-    background-color: #6870E0;
+
+.Contact #menu a i {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+  margin-top: 1.2rem;
 }
-.cardContact .btnRecherche{
-    color: #FFF;
-    border: 1px solid #6870E0;
+.Contact #menu a span {
+  position: relative;
+  left: 1rem;
+  color: #272935;
+  font-weight: 400;
 }
-.cardContact .btnRecherche:hover{
-    color: #ffffff9c;
-    background-color: #6870E0;
+.Contact #menu a:hover {
+  color: #6870e097;
+  font-weight: 200;
 }
-.contactCardChange{
-    border: none;
-    background: none;
+.Contact #menu #ClickHover i {
+  color: #6870e0;
 }
-.contactCardChange a{
-    color: #FFF;
+.Contact #menu #ClickHover span {
+  color: #6870e0;
+  font-weight: 500;
 }
-.contactCardChange a:hover{
-    color: #6870E0;
+.Contact #btnBottom {
+  color: #272935;
+  text-align: center;
 }
-.contactCardChange .ultime{
-    color: #6870E0;
+.Contact a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .Contact .rapportCard2 td {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Contact #btnBottom {
+    bottom: 0 !important;
+    padding: 5px !important;
+    display: block;
+    position: relative !important;
+    width: 10vw;
+  }
+  .Contact #btnBottom h5 {
+    font-size: 0.5rem;
+  }
+  .Contact #btnBottom h6 {
+    font-size: 0.5rem;
+  }
 }
